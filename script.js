@@ -21,6 +21,7 @@ listContainer.addEventListener(
     if (e.target.tagName === "LI") {
       const isChecked = e.target.classList.contains("checked");
       e.target.classList.toggle("checked", !isChecked);
+      storeToDoList();
     }
     if (e.target.tagName === "SPAN") {
       e.target.parentElement.remove();
